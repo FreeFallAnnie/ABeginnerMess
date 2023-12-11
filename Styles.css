@@ -1,0 +1,262 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+nav {
+    list-style-type: none;
+    background-color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  nav li {
+    display: inline-block;
+    line-height: 35px;
+    color: white;
+    text-align:center;
+    padding:10px 20px;
+  }
+  nav li:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    background-color:rgb(247, 213, 61);
+
+    }
+    a:link {
+        text-decoration: none;
+        color: #fff;
+        }
+      
+      a:visited {
+        text-decoration: none;
+        background-color:rgb(247, 213, 61);
+        color: #fff;
+      }
+      
+      a:hover, a:active {
+        text-decoration: none;
+        background-color:rgb(247, 213, 61);
+      }
+
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding: 50px 0 30px 0;
+    }
+
+/*This is for F Link to the F site. - */
+/* Popup container - can be anything you want */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* The actual popup */
+  .popup .popuptext {
+    visibility: hidden;
+    width: 200px;
+    background-color: #1e706cb0;
+    color: #fff;
+    text-align: left;
+    border-radius: 6px;
+    padding: 40px 20px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%)
+  }
+  
+  /* Popup arrow */
+  .popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  /* Toggle this class - hide and show the popup */
+  .popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+  }
+  
+  /* Add animation (fade in the popup) */
+  @-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+  }
+  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
+.polaroid {
+        width: 50%;
+        background-color: white;
+        border-radius: 2%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+    a.polaroidlink:link {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      
+      /* visited link */
+      a.polaroidlink:visited {
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+      }
+      
+      /* mouse over link */
+     a.polaroidlink:hover {
+        color: hotpink;
+      }
+      
+      /* selected link */
+      a.polaroidlink:active {
+        color: rgb(0, 119, 73);
+      }
+.container {
+      text-align: center;
+      padding: 10px 20px;
+      border-radius: 8px;
+      max-width: 100%;
+     }
+.product {
+    position: relative;
+    width: 95%;
+    margin: 0 auto;
+    }
+
+@media screen and (max-width: 768px) {
+    .product {
+    width: 100%;
+    }
+    }
+
+.product img {
+    max-width: 100%;
+    border-radius: 2% 2% 0% 0%;
+    margin-top: 20px;
+    }
+.hotspot {
+    position: absolute;
+    display: inline-block;
+    background-color: rgba(14, 14, 14, 0.438);
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    }
+
+.hotspot:hover {
+    background-color: rgba(243, 222, 130, 0.507)
+    }
+
+@media screen and (max-width: 768px) {
+.hotspot {
+    padding: 5px 10px;
+    }
+    }
+
+.spot_1 {
+    top: 12%;
+    left: 35%;
+    }
+.spot_2 {
+    top: 50%;
+    left: 42%;
+    }
+
+.spot_3 {
+    top: 30%;
+    left: 55%;
+    }
+.spot_4 {
+    top: 20%;
+    left: 70%;
+    }
+.spot_5 {
+    top: 55%;
+    left: 75%;
+    }
+
+.modal {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    display: none;
+    box-shadow: 2px 2px 9px 4px rgba(0, 0, 0, 0.2);
+    width: 40%;
+    margin: 0 30%;
+    color: #000;
+    }
+
+.modal h3 {
+    margin: 0;
+    padding: 10px 0;
+    }
+
+.modal p {
+    margin: 0;
+    padding: 0 0 5px 0;
+    }
+
+.modal_info {
+    padding: 15px;
+    }
+
+.modal_info img {
+    width: 90%;
+    border-radius: 2% 2% 0% 0%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+.modal_info a{
+    position: absolute;
+    top: -28px;
+    right: 0;
+    display: inline-block;
+    text-decoration: none;
+    background-color: #000;
+    color: #fff;
+    padding: 7px 10px 4px 10px;
+    }
+
+.footer {
+    background-color: #000;
+    color: #fff;
+    line-height: 15px;
+    text-align: center;
+    margin-top: 40px;
+    padding:5px 5px;
+    }
+
+@media screen and (max-width: 768px) {
+    .modal_1, .modal_2, .modal_3, .modal_4, .modal_5 {
+    top: 0;
+    margin: 0 5%;
+    transform: translateY(0);
+    width: 90%;
+    }
+    }
